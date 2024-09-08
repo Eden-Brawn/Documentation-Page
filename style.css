@@ -8,6 +8,7 @@
   #navbar{
     position: relative;
     width: 30%;
+    height: 100%;
     border-right: solid 0.01em black;
   }
   a{
@@ -24,5 +25,14 @@
   .main-section{
     border-bottom: solid 0.01em black;
     
+  }
+  code{
+    background-color: rgb(232, 232, 232);
+    border: solid 0.01em rgba(0, 0, 0, 0.379);
+    display: block;
+    margin: 1em;
+  }
+  code p{
+    margin: 0;
   }
   
