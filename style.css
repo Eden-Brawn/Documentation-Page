@@ -3,10 +3,11 @@
   }
   body{
     display: flex;
+    flex-direction: row;
     margin: 0;
   }
   #navbar{
-    position: relative;
+    position: fixed;
     width: 25%;
     height: 100%;
     border-right: solid 0.01em black;
@@ -20,7 +21,7 @@
   }
   #main-doc{
     width: 75%;
-  
+    margin-left: 25%;
   }
   .main-section{
     border-bottom: solid 0.01em black;
