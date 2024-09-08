@@ -3,15 +3,20 @@
   }
   body{
     display: flex;
+    margin: 0;
   }
   #navbar{
     position: relative;
     width: 30%;
-    margin: 1em;
+    padding: 0.5em;
+    border-right: solid 0.01em black;
   }
   a{
     display: block;
   }
-  main{
+  #main-doc{
     margin: 1em auto 0em auto;
+  }
+  .main-section{
+    border-bottom: solid 0.01em black;
   }
