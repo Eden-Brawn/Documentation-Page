@@ -7,4 +7,11 @@
   #navbar{
     position: relative;
     width: 30%;
+    margin: 1em;
+  }
+  a{
+    display: block;
+  }
+  main{
+    margin: 1em auto 0em auto;
   }
