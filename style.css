@@ -35,4 +35,10 @@
   code p{
     margin: 0;
   }
+  .first-indent{
+    text-indent: 1em;
+  }
+  .second-indent{
+    text-indent: 2em;
+  }
   
