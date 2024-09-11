@@ -24,8 +24,11 @@
     margin-left: 25%;
   }
   .main-section{
-    border-bottom: solid 0.01em black;
-    
+    /*border-bottom: solid 0.01em black;*/
+    margin: 0.5em;
+    padding: 0.5em;
+    box-shadow: 0.1em 0.25em 0.5em  grey;
+    border-radius: 0.5em;
   }
   code{
     background-color: rgb(232, 232, 232);
@@ -42,5 +45,11 @@
   }
   .second-indent{
     text-indent: 2em;
+  }
+  .main-section.intro{
+    background-color: rgba(128, 0, 128, 0.83);
+  }
+  h2{
+    margin-top: 0;
   }
   
