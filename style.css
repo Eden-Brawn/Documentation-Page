@@ -6,37 +6,52 @@
     flex-direction: row;
     flex-wrap: nowrap;
     margin: 0;
+    font-family: sans-serif;
+    background-color: rgb(254, 254, 254);
   }
   #navbar{
     position: fixed;
+    top: 0.5em;
+    left: 0.5em;
     width: 25%;
-    height: 100%;
-    box-shadow: 0.1em 0em 0.3em 0.01em rgb(214, 214, 214);  
+    height: auto;
+    box-shadow: 0 0.313em 0.625em rgba(154,160,185,.05), 0 0.938em 2.5em rgba(166,173,201,.2); /*https://www.reddit.com/r/web_design/comments/bwtk83/simple_trick_to_make_your_boxshadows_look_much/*/
     border-radius: 0.5em;
+    text-align: center;
+    background-color: white;
+  }
+  .nav-link{
+    padding: 0.5em;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+  .nav-link:hover{
+    background-color: rgba(134,58,181,255);
+    border-radius: 0.5em;
+    color: white;
   }
   a{
     display: block;
-    border-bottom: solid 0.01em black;
   }
-  #navbar header{
-    border-bottom: solid 0.01em black;
-  }
+  
   #main-doc{
     width: 75%;
     margin-left: 26%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    
   }
   .main-section{
-    border-bottom: solid 0.01em black;
-    padding: 0.5em;
+    padding: 2em;
     
   }
   code{
     background-color: rgb(232, 232, 232);
-    /*border: solid 0.01em rgba(0, 0, 0, 0.379);*/
     display: inline-block;
     margin: 1em;
     padding: 1em;
-    box-shadow: 0.1em 0.25em 0.5em  rgb(214, 214, 214);  ;
+    box-shadow: 0 0.313em 0.625em rgba(154,160,185,.05), 0 0.938em 2.5em rgba(166,173,201,.2); /*https://www.reddit.com/r/web_design/comments/bwtk83/simple_trick_to_make_your_boxshadows_look_much/*/
     border-radius: 0.5em;
   }
   code p{
@@ -48,10 +63,16 @@
   .second-indent{
     text-indent: 2em;
   }
-  .main-section.intro{
-    background-color: #E5D2F0;
+  h1{
+    font-size: 1.8em;
   }
   h2{
     margin-top: 0;
   }
-  
+  h1,h2{
+    font-family: 'arial', sans-serif;
+  }
+  h1:hover, h2:hover{
+    text-decoration: underline;
+    color: rgba(134,58,181,255);
+  }
