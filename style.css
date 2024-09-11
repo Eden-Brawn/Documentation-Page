@@ -4,13 +4,15 @@
   body{
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     margin: 0;
   }
   #navbar{
     position: fixed;
     width: 25%;
     height: 100%;
-    border-right: solid 0.01em black;
+    box-shadow: 0.1em 0em 0.3em 0.01em rgb(214, 214, 214);  
+    border-radius: 0.5em;
   }
   a{
     display: block;
@@ -21,21 +23,21 @@
   }
   #main-doc{
     width: 75%;
-    margin-left: 25%;
+    margin-left: 26%;
   }
   .main-section{
-    /*border-bottom: solid 0.01em black;*/
-    margin: 0.5em;
+    border-bottom: solid 0.01em black;
     padding: 0.5em;
-    box-shadow: 0.1em 0.25em 0.5em  grey;
-    border-radius: 0.5em;
+    
   }
   code{
     background-color: rgb(232, 232, 232);
-    border: solid 0.01em rgba(0, 0, 0, 0.379);
+    /*border: solid 0.01em rgba(0, 0, 0, 0.379);*/
     display: inline-block;
     margin: 1em;
     padding: 1em;
+    box-shadow: 0.1em 0.25em 0.5em  rgb(214, 214, 214);  ;
+    border-radius: 0.5em;
   }
   code p{
     margin: 0;
@@ -47,7 +49,7 @@
     text-indent: 2em;
   }
   .main-section.intro{
-    background-color: rgba(128, 0, 128, 0.83);
+    background-color: #E5D2F0;
   }
   h2{
     margin-top: 0;
