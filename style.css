@@ -8,28 +8,38 @@
     margin: 0;
     font-family: sans-serif;
     background-color: rgb(254, 254, 254);
+    
   }
   #navbar{
     position: fixed;
     top: 0.5em;
     left: 0.5em;
+    bottom: 0.5em;
     width: 25%;
-    height: auto;
-    box-shadow: 0 0.313em 0.625em rgba(154,160,185,.05), 0 0.938em 2.5em rgba(166,173,201,.2); /*https://www.reddit.com/r/web_design/comments/bwtk83/simple_trick_to_make_your_boxshadows_look_much/*/
+    height: 97vh;
+    box-shadow: 0 0.313em 0.625em rgba(154,160,185,0.05), 0 0.938em 2.5em rgba(166,173,201,0.2); /*https://www.reddit.com/r/web_design/comments/bwtk83/simple_trick_to_make_your_boxshadows_look_much/*/
     transition: all 0.3s ease-in-out;
     border-radius: 0.5em;
     text-align: center;
     background-color: white;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    scrollbar-width: thin;
+    scrollbar-color:rgb(254, 254, 254), white;
+    margin-top: auto;
+    margin-bottom: auto;
   }
   #navbar::after{
     content: "";
-    box-shadow: 0 0.313em 0.625em rgba(182, 154, 185, 0.1), 0 0.938em 2.5em rgba(198, 166, 201, 0.4); 
+    box-shadow: 0 0.313em 0.625em rgba(242, 184, 248, 0.1), 0 0.938em 2.5em rgba(242, 184, 248, 0.4); 
     transition: all 0.3s ease-in-out;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    position: fixed;
+    width: 25%;
+    height: 97vh;
+    top: 0.5em;
+    left: 0.5em;
+    bottom: 0.5em;
+    right: 0.5em;
     opacity: 0;
     border-radius: 0.5em;
     z-index: -1;
@@ -45,7 +55,7 @@
     text-align: center;
   }
   .nav-link:hover{
-    background-color: rgba(134,58,181,255);
+    background-color: rgb(239, 90, 255);
     border-radius: 0.5em;
     color: white;
   }
@@ -69,14 +79,14 @@
     display: inline-block;
     margin: 1em;
     padding: 1em;
-    box-shadow: 0 0.313em 0.625em rgba(154,160,185,0.05), 0 0.938em 2.5em rgba(166,173,201,.2); /*https://www.reddit.com/r/web_design/comments/bwtk83/simple_trick_to_make_your_boxshadows_look_much/*/
+    box-shadow: 0 0.313em 0.625em rgba(154,160,185,0.05), 0 0.938em 2.5em rgba(166,173,201,0.2); /*https://www.reddit.com/r/web_design/comments/bwtk83/simple_trick_to_make_your_boxshadows_look_much/*/
     border-radius: 0.5em;
     transition: all 0.3s ease-in-out;
     position: relative;
   }
   code::after{
     content: "";
-    box-shadow: 0 0.313em 0.625em rgba(182, 154, 185, 0.1), 0 0.938em 2.5em rgba(198, 166, 201, 0.4); 
+    box-shadow: 0 0.313em 0.625em rgba(242, 184, 248, 0.1), 0 0.938em 2.5em rgba(242, 184, 248, 0.4); 
     transition: all 0.3s ease-in-out;
     position: absolute;
     left: 0;
@@ -109,3 +119,16 @@
     font-family: 'arial', sans-serif;
   }
   
+  
+  #navbar::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  #navbar::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  #navbar::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
