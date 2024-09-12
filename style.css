@@ -21,10 +21,23 @@
     text-align: center;
     background-color: white;
   }
-  #navbar:hover{
+  #navbar::after{
+    content: "";
     box-shadow: 0 0.313em 0.625em rgba(182, 154, 185, 0.1), 0 0.938em 2.5em rgba(198, 166, 201, 0.4); 
     transition: all 0.3s ease-in-out;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    border-radius: 0.5em;
+    z-index: -1;
   }
+  #navbar:hover::after{
+    opacity: 1;
+  }
+  /*https://stackoverflow.com/questions/36379426/after-pseudo-element-not-showing-box-shadow#:~:text=The%20problem%20is%20the%20%3A%3A,same%20size%20as%20the%20container.*/
   .nav-link{
     padding: 0.5em;
     text-decoration: none;
@@ -59,10 +72,23 @@
     box-shadow: 0 0.313em 0.625em rgba(154,160,185,0.05), 0 0.938em 2.5em rgba(166,173,201,.2); /*https://www.reddit.com/r/web_design/comments/bwtk83/simple_trick_to_make_your_boxshadows_look_much/*/
     border-radius: 0.5em;
     transition: all 0.3s ease-in-out;
+    position: relative;
   }
-  code:hover{
+  code::after{
+    content: "";
     box-shadow: 0 0.313em 0.625em rgba(182, 154, 185, 0.1), 0 0.938em 2.5em rgba(198, 166, 201, 0.4); 
     transition: all 0.3s ease-in-out;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    border-radius: 0.5em;
+    z-index: -1;
+  }
+  code:hover::after{
+    opacity: 1;
   }
   code p{
     margin: 0;
