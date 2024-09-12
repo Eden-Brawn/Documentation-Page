@@ -16,9 +16,14 @@
     width: 25%;
     height: auto;
     box-shadow: 0 0.313em 0.625em rgba(154,160,185,.05), 0 0.938em 2.5em rgba(166,173,201,.2); /*https://www.reddit.com/r/web_design/comments/bwtk83/simple_trick_to_make_your_boxshadows_look_much/*/
+    transition: all 0.3s ease-in-out;
     border-radius: 0.5em;
     text-align: center;
     background-color: white;
+  }
+  #navbar:hover{
+    box-shadow: 0 0.313em 0.625em rgba(182, 154, 185, 0.1), 0 0.938em 2.5em rgba(198, 166, 201, 0.4); 
+    transition: all 0.3s ease-in-out;
   }
   .nav-link{
     padding: 0.5em;
@@ -51,8 +56,13 @@
     display: inline-block;
     margin: 1em;
     padding: 1em;
-    box-shadow: 0 0.313em 0.625em rgba(154,160,185,.05), 0 0.938em 2.5em rgba(166,173,201,.2); /*https://www.reddit.com/r/web_design/comments/bwtk83/simple_trick_to_make_your_boxshadows_look_much/*/
+    box-shadow: 0 0.313em 0.625em rgba(154,160,185,0.05), 0 0.938em 2.5em rgba(166,173,201,.2); /*https://www.reddit.com/r/web_design/comments/bwtk83/simple_trick_to_make_your_boxshadows_look_much/*/
     border-radius: 0.5em;
+    transition: all 0.3s ease-in-out;
+  }
+  code:hover{
+    box-shadow: 0 0.313em 0.625em rgba(182, 154, 185, 0.1), 0 0.938em 2.5em rgba(198, 166, 201, 0.4); 
+    transition: all 0.3s ease-in-out;
   }
   code p{
     margin: 0;
@@ -72,7 +82,4 @@
   h1,h2{
     font-family: 'arial', sans-serif;
   }
-  h1:hover, h2:hover{
-    text-decoration: underline;
-    color: rgba(134,58,181,255);
-  }
+  
