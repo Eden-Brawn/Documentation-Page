@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    gap: 0;
     margin: 0;
     font-family: sans-serif;
     background-color: rgb(254, 254, 254);
@@ -15,6 +16,7 @@
     top: 0.5em;
     left: 0.5em;
     bottom: 0.5em;
+    right: 0.5em;
     width: 25%;
     height: 97vh;
     box-shadow: 0 0.313em 0.625em rgba(154,160,185,0.05), 0 0.938em 2.5em rgba(166,173,201,0.2); /*https://www.reddit.com/r/web_design/comments/bwtk83/simple_trick_to_make_your_boxshadows_look_much/*/
@@ -25,9 +27,10 @@
     overflow-y: scroll;
     overflow-x:hidden;
     scrollbar-width: thin;
-    scrollbar-color:rgb(254, 254, 254), white;
+    scrollbar-color:rgb(232, 232, 232) rgb(254, 254, 254);
     margin-top: auto;
     margin-bottom: auto;
+    z-index: 1;
   }
   #navbar::after{
     content: "";
@@ -43,6 +46,8 @@
     opacity: 0;
     border-radius: 0.5em;
     z-index: -1;
+    margin-top: auto;
+    margin-bottom: auto;
   }
   #navbar:hover::after{
     opacity: 1;
@@ -120,15 +125,30 @@
   }
   
   
-  #navbar::-webkit-scrollbar {
-    width: 1em;
-  }
-   
-  #navbar::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  }
-   
-  #navbar::-webkit-scrollbar-thumb {
-    background-color: darkgrey;
-    outline: 1px solid slategrey;
+  
+  @media(max-width: 875px){
+    #navbar{
+      width: 98%;
+      height: 25vh;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #navbar::after{
+      width: 98%;
+      height: 25vh;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #main-doc{
+      width: 100%;
+      margin-top: 20%;
+      margin-left: 1em;
+    }
+    #main-section{
+      width: fit-content;
+    }
   }
