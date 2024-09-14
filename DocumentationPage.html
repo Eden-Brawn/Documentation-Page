@@ -267,35 +267,48 @@
           <h2>CSS Comments</h2>
         </header>
         <p>This is how comments are typed:</p>
-        <code>/* This is a comment. */</code>
+        <code><p>/* This is a comment. */</p></code>
       </section>
       <section class="main-section" id="Type,_ID_And_Class_Selectors">
         <header>
           <h2>Type, ID And Class Selectors </h2>
         </header>
         <p>This is a type selector to style an element</p>
-        <code>p {</code>
+        <code><p>p {</p></code>
       </section>
       <section class="main-section" id="Selectors_And_Attributes">
         <header>
           <h2>Selectors And Attributes </h2>
         </header>
         <p>This is a selector with an attribute:</p>
-        <code>p[class~="blue"] {</code>
+        <code><p>p[class~="blue"] {</p></code>
       </section>
       <section class="main-section" id="Pseudo_Selectors_And_Elements">
         <header>
           <h2>Pseudo Selectors And Elements </h2>
         </header>
         <p>This is a pseudo selector:</p>
-        <code>p:hover {</code>
+        <code><p>p:hover {</p></code>
       </section>
       <section class="main-section" id="Selectors_And_Combinators">
         <header>
           <h2>Selectors And Combinators</h2>
         </header>
         <p>This is a combinator:</p>
-        <code>div > p {</code>
+        <code><p>div > p {</p></code>
+      </section>
+      <section class="main-section" id="CSS_Variables"></section>
+        <header>
+          <h2>CSS Variables</h2>
+        </header>
+        <p>This is a variable:</p>
+        <code><p>:root {</p>
+          <p class="first-indent">--border-color: black;</p>
+          <p>}</p></code>
+          <p>This is the variable in use:</p>
+          <code><p>section {</p>
+            <p class="first-indent">border: solid 1px var(--border-color);</p>
+            <p>}</p></code>
       </section>
     </main>
   </body>
